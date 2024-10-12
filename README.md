@@ -1,4 +1,5 @@
-# [webpack-alioss-plugin](https://git.io/fhMkf)
+# webpack-oss-plugin
+> fork from https://github.com/borenXue/webpack-alioss-plugin，基于2.4.2功能性扩展，后续发包 @wont/webpack-oss-plugin@2.4.3
 
 [![Travis CI](https://img.shields.io/travis/com/borenXue/webpack-alioss-plugin/master.svg)](https://travis-ci.com/borenXue/webpack-alioss-plugin)
 [![node version](https://img.shields.io/node/v/webpack-alioss-plugin.svg)](https://nodejs.org)
@@ -35,12 +36,12 @@
 ## 安装
 
 ```
-npm install -D webpack-alioss-plugin
+npm install -D webpack-oss-plugin
 ```
 
 ## 使用示例
 
-> **注意:** 需修改 `webpackConfig.output.publicPath` 为`prefix` oss 路径对应的访问 url, eg: `'//res.xueboren.com/auto_upload_ci/your-project-name/'`
+> **注意:** 需修改 `webpackConfig.output.publicPath` 为`prefix` oss 路径对应的访问 url, eg: `'//oss.self.com/auto_upload_ci/your-project-name/'`
 
 > 用法一: 结合环境变量 (**推荐**)
 
@@ -83,7 +84,7 @@ const WebpackAliossPlugin = require('webpack-alioss-plugin');
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  publicPath: isProduction ? '//res.xueboren.com/auto_upload_ci/your-project-name/' : '',
+  publicPath: isProduction ? '//oss.self.com/auto_upload_ci/your-project-name/' : '',
   configureWebpack: {
     plugins: isProduction ? [
       new WebpackAliossPlugin(),

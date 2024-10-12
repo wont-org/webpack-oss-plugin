@@ -25,6 +25,6 @@ jobs:
           npm run build;
           npm run semantic-release
 
-notifications:
-  email:
-    - xueboren001@outlook.com
+# notifications:
+#   email:
+#     - xueboren001@outlook.com

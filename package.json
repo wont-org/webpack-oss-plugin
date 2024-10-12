@@ -1,14 +1,14 @@
 {
-  "name": "webpack-alioss-plugin",
-  "version": "2.4.2",
+  "name": "@wont/webpack-oss-plugin",
+  "version": "2.4.3",
   "description": "Ali oss-webpack auto upload files plugin ",
-  "homepage": "http://www.xueboren.com",
+  "homepage": "https://github.com/wont-org/webpack-oss-plugin",
   "bugs": {
-    "url": "https://github.com/borenXue/webpack-alioss-plugin/issues/new"
+    "url": "https://github.com/wont-org/webpack-oss-plugin/issues"
   },
-  "repository": "https://github.com/borenXue/webpack-alioss-plugin.git",
+  "repository": "https://github.com/wont-org/webpack-oss-plugin.git",
   "license": "MIT",
-  "author": "borenXue <boren.xue@outlook.com> (http://www.xueboren.com)",
+  "author": "lk0606",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
